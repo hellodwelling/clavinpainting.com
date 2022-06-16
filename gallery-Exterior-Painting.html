@@ -35,11 +35,8 @@
        
      
     
-    
     <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/style.css" rel="stylesheet">
-    
     <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.css" rel="stylesheet">
-     <!-- <script src="/staticfiles/landing_page_gen/render.js"></script>   -->
     <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script> 
 </head>
 
@@ -82,22 +79,20 @@
     <div> Galleries
         <i class="fa fa-caret-down"></i>
     </div>
-    <!-- for desktop -->
     <div class="hidden lg:group-hover:opacity-100 lg:opacity-0 transition duration-500 ease-in-out lg:flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
         
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Interior-Painting"> Interior Painting </a>
-        
             <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Videos"> Videos </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Interior-Painting"> Interior Painting </a>
         
             <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Exterior-Painting"> Exterior Painting </a>
         
     </div> 
-    <!-- for mobile b/c can't enable tailwind variants w/o postcss build -->
     <div id='mobile-dropdown' class="lg:hidden hidden transition duration-500 ease-in-out flex flex-col bg-white z-50 w-full min-w-max absolute top-10 shadow-lg rounded-md px-4 py-4 space-y-3">
         
-            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Interior-Painting"> Interior Painting </a>
-        
             <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Videos"> Videos </a>
+        
+            <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Interior-Painting"> Interior Painting </a>
         
             <a class="transparent rounded-lg text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="gallery-Exterior-Painting"> Exterior Painting </a>
         
@@ -233,50 +228,86 @@
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
             <h2  style= "color:#9ca3af" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Exterior Painting</h2>
             <h2  style= "color:#ed353d" class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">Our Best Work</h2>
-            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/MXR3J7CQL1VZCSBWSX5A9N0Z741WZLXPYQZDFYIN.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/J58KTZBMHO22NG436Z2TNHMM83EXLAK19U9NSP6E.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/C06FVTADF4YM49WFUBJJM3RG0MRX2P4834XG8YOP.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/ZGCJTITIL5SLOESF994D4OIF8BQ83T51MOL3YIY8.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/A349U4F14HB3LZ6YBTTCJ9KXJZQEY8DSTPT8RFKJ.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/92TCEJBYCICI7KKADVROMDXF5E2GJW18G3AS6L8W.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/FXRQCF4PGNBVZWGKP4AOQNMBRADV4VMW41K1V1C7.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/ZA6DTF1TSPQX5Q0N03DM43M174GQ22I18O38NH5S.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/Y6956YKANLLCOFL50FB3CQNOTR9OFV4LR0U7ADER.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/1UQ0JT1CX07R8LE83X2XM83EUUAQVJB0M6VJ2YVH.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/6U123GJ2O6YG1WP3ZHCOFXHB3ZZLN9K1AEYB8NXB.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/06e23ae9-1458-42b8-9d0c-2470f6793be9.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/91efc1fd-f26e-4e14-89e0-fce69f8d8eac.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/14c9f4a7-4237-4087-a3a0-ea2e3389a124.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/2491b912-878b-4a31-8687-d0c479486108.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/64202ffe-0780-4269-9349-a035f2b81707.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/97b1685e-1da4-4a05-9526-968f5a2383c6.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/4772f7aa-9867-4a22-aa7f-5d17fe4a8c13.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a4552989-e34b-4cf4-80a9-cf2f59c3bb1b.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/9fac1a43-1ff9-4c70-a171-807d6e3ac549.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/6U123GJ2O6YG1WP3ZHCOFXHB3ZZLN9K1AEYB8NXB.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1UQ0JT1CX07R8LE83X2XM83EUUAQVJB0M6VJ2YVH.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/Y6956YKANLLCOFL50FB3CQNOTR9OFV4LR0U7ADER.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/FXRQCF4PGNBVZWGKP4AOQNMBRADV4VMW41K1V1C7.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/A349U4F14HB3LZ6YBTTCJ9KXJZQEY8DSTPT8RFKJ.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/92TCEJBYCICI7KKADVROMDXF5E2GJW18G3AS6L8W.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ZA6DTF1TSPQX5Q0N03DM43M174GQ22I18O38NH5S.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ZGCJTITIL5SLOESF994D4OIF8BQ83T51MOL3YIY8.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/C06FVTADF4YM49WFUBJJM3RG0MRX2P4834XG8YOP.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/J58KTZBMHO22NG436Z2TNHMM83EXLAK19U9NSP6E.png', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/MXR3J7CQL1VZCSBWSX5A9N0Z741WZLXPYQZDFYIN.png', 'photo'],   ] }" @keydown.escape= "open = false"   >
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/MXR3J7CQL1VZCSBWSX5A9N0Z741WZLXPYQZDFYIN.png"  alt = "Photo number 9 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/06e23ae9-1458-42b8-9d0c-2470f6793be9.jpeg"  alt = "-image"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/J58KTZBMHO22NG436Z2TNHMM83EXLAK19U9NSP6E.png"  alt = "Photo number 10 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/91efc1fd-f26e-4e14-89e0-fce69f8d8eac.jpeg"  alt = "-image"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/C06FVTADF4YM49WFUBJJM3RG0MRX2P4834XG8YOP.png"  alt = "Photo number 12 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/14c9f4a7-4237-4087-a3a0-ea2e3389a124.jpeg"  alt = "-image"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/ZGCJTITIL5SLOESF994D4OIF8BQ83T51MOL3YIY8.png"  alt = "Photo number 13 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/2491b912-878b-4a31-8687-d0c479486108.jpeg"  alt = "-image"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/A349U4F14HB3LZ6YBTTCJ9KXJZQEY8DSTPT8RFKJ.png"  alt = "Photo number 16 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/64202ffe-0780-4269-9349-a035f2b81707.jpeg"  alt = "-image"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/92TCEJBYCICI7KKADVROMDXF5E2GJW18G3AS6L8W.png"  alt = "Photo number 15 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/97b1685e-1da4-4a05-9526-968f5a2383c6.jpeg"  alt = "-image"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/FXRQCF4PGNBVZWGKP4AOQNMBRADV4VMW41K1V1C7.png"  alt = "Photo number 17 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/4772f7aa-9867-4a22-aa7f-5d17fe4a8c13.jpeg"  alt = "-image"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/ZA6DTF1TSPQX5Q0N03DM43M174GQ22I18O38NH5S.png"  alt = "Photo number 14 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a4552989-e34b-4cf4-80a9-cf2f59c3bb1b.jpeg"  alt = "-image"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/Y6956YKANLLCOFL50FB3CQNOTR9OFV4LR0U7ADER.jpeg"  alt = "Photo number 20 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/9fac1a43-1ff9-4c70-a171-807d6e3ac549.jpeg"  alt = "-image"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/1UQ0JT1CX07R8LE83X2XM83EUUAQVJB0M6VJ2YVH.jpeg"  alt = "Photo number 22 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/6U123GJ2O6YG1WP3ZHCOFXHB3ZZLN9K1AEYB8NXB.jpeg"  alt = "Photo number 23 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                                     
                         
-                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/342x240/media/6U123GJ2O6YG1WP3ZHCOFXHB3ZZLN9K1AEYB8NXB.jpeg"  alt = "Photo number 23 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1UQ0JT1CX07R8LE83X2XM83EUUAQVJB0M6VJ2YVH.jpeg"  alt = "Photo number 22 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/Y6956YKANLLCOFL50FB3CQNOTR9OFV4LR0U7ADER.jpeg"  alt = "Photo number 20 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 12; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/FXRQCF4PGNBVZWGKP4AOQNMBRADV4VMW41K1V1C7.png"  alt = "Photo number 17 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 13; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/A349U4F14HB3LZ6YBTTCJ9KXJZQEY8DSTPT8RFKJ.png"  alt = "Photo number 16 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 14; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/92TCEJBYCICI7KKADVROMDXF5E2GJW18G3AS6L8W.png"  alt = "Photo number 15 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 15; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ZA6DTF1TSPQX5Q0N03DM43M174GQ22I18O38NH5S.png"  alt = "Photo number 14 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 16; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ZGCJTITIL5SLOESF994D4OIF8BQ83T51MOL3YIY8.png"  alt = "Photo number 13 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 17; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/C06FVTADF4YM49WFUBJJM3RG0MRX2P4834XG8YOP.png"  alt = "Photo number 12 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 18; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/J58KTZBMHO22NG436Z2TNHMM83EXLAK19U9NSP6E.png"  alt = "Photo number 10 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 19; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/MXR3J7CQL1VZCSBWSX5A9N0Z741WZLXPYQZDFYIN.png"  alt = "Photo number 9 of Clavin Painting&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                  
                                     
@@ -313,7 +344,7 @@
                                     </template>
                                     
                                     <template x-if="slide[1] != 'photo'  ">
-                                        <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
+                                        <video class="object-cover max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
                                         </video>
                                     </template> 
                                     
@@ -363,10 +394,8 @@
     
 
 <section  style= "background-color:#9ca3af"   class="py-10 bg-gray-900">
-    
         <div class="flex flex-col justify-around text-center md:flex-row">
             <p class="order-last text-sm leading-tight text-gray-400 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
-             
             <ul class="flex flex-row flex-wrap text-center justify-center pb-3 lg:-ml-4 lg:-mr-4 text-sm">
                 <li> <a  style= "color:#ed353d"  href="#about" class="px-2 md:px-4 text-gray-400 hover:text-white">About Us</a> </li>
                 
@@ -387,6 +416,9 @@
                 
                 <li> <a  style= "color:#ed353d"  href="#find-us" class=" px-2 md:px-4 text-gray-400 hover:text-white">Service Areas</a></li>
                 
+                
+                <li> <a  style= "color:#ed353d"  href="clavinpainting.com/sitemap.xml" class=" px-2 md:px-4 text-gray-400 hover:text-white">Sitemap</a></li>
+                
             </ul>
         </div>
     </div>
@@ -394,7 +426,6 @@
 </div> 
 
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-  
 
 </body>
 </html>
